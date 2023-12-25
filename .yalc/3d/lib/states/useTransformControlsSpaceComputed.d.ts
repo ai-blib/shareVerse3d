@@ -1,0 +1,1 @@
+export declare const setTransformControlsSpaceComputed: import("@lincode/reactivity").SetGlobalState<"local" | "world">, getTransformControlsSpaceComputed: import("@lincode/reactivity").GetGlobalState<"local" | "world">;

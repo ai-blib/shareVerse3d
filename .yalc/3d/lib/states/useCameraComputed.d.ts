@@ -1,0 +1,1 @@
+export declare const setCameraComputed: import("@lincode/reactivity").SetGlobalState<import("three").PerspectiveCamera>, getCameraComputed: import("@lincode/reactivity").GetGlobalState<import("three").PerspectiveCamera>;

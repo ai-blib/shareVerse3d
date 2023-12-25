@@ -1,0 +1,1 @@
+{"version":3,"file":"ITimeline.js","sourceRoot":"","sources":["../../src/interface/ITimeline.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,cAAc,EAAE,MAAM,kBAAkB,CAAA;AACjD,OAA0B,EACtB,wBAAwB,EACxB,sBAAsB,EACzB,MAAM,qBAAqB,CAAA;AAI5B,MAAM,CAAC,MAAM,cAAc,GAAsC;IAC7D,GAAG,sBAAsB;CAC5B,CAAA;AAED,MAAM,CAAC,MAAM,gBAAgB,GAAG,cAAc,CAC1C,CAAC,wBAAwB,CAAC,EAC1B,EAAE,CACL,CAAA"}

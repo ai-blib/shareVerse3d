@@ -1,0 +1,1 @@
+{"version":3,"file":"useEditorPlay.js","sourceRoot":"","sources":["../../src/states/useEditorPlay.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,qBAAqB,CAAA;AACvC,OAAO,EAAE,qBAAqB,EAAE,MAAM,yBAAyB,CAAA;AAE/D,MAAM,CAAC,MAAM,CAAC,aAAa,EAAE,aAAa,CAAC,GAAG,KAAK,CAC/C,qBAAqB,EAAE,KAAK,MAAM,CACrC,CAAA;AACD,qBAAqB,CAAC,CAAC,IAAI,EAAE,EAAE,CAAC,aAAa,CAAC,IAAI,KAAK,MAAM,CAAC,CAAC,CAAA"}

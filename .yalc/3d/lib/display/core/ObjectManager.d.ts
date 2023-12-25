@@ -1,0 +1,37 @@
+import { Object3D } from "three";
+import IObjectManager from "../../interface/IObjectManager";
+import FoundManager from "./FoundManager";
+import PhysicsObjectManager from "./PhysicsObjectManager";
+export default abstract class ObjectManager<T extends Object3D = Object3D> extends PhysicsObjectManager<T> implements IObjectManager {
+    object3d: T;
+    constructor(object3d?: T, unmounted?: boolean);
+    get innerRotationX(): number;
+    set innerRotationX(val: number);
+    get innerRotationY(): number;
+    set innerRotationY(val: number);
+    get innerRotationZ(): number;
+    set innerRotationZ(val: number);
+    get innerRotation(): number;
+    set innerRotation(val: number);
+    get innerX(): number;
+    get playAllAnimation(): any;
+    set playAllAnimation(val: any);
+    set innerX(val: number);
+    get innerY(): number;
+    set innerY(val: number);
+    get innerZ(): number;
+    set innerZ(val: number);
+    set firstInnerY(val: any);
+    set firstInnerZ(val: any);
+    set firstInnerX(val: any);
+    get width(): number;
+    set width(val: number);
+    get height(): number;
+    set height(val: number);
+    get depth(): number;
+    set depth(val: number);
+    get innerVisible(): boolean;
+    set innerVisible(val: boolean);
+    find(name: string, hiddenFromSceneGraph?: boolean): FoundManager | undefined;
+    findAll(name?: string | RegExp | ((name: string) => boolean)): Array<FoundManager>;
+}

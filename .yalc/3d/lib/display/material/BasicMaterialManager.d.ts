@@ -1,0 +1,35 @@
+import { MeshStandardMaterial, SpriteMaterial, Vector2 } from "three";
+import Appendable from "../../api/core/Appendable";
+import IBasicMaterialManager from "../../interface/IBasicMaterialManager";
+export default class BasicMaterialManager<T extends MeshStandardMaterial | SpriteMaterial> extends Appendable implements IBasicMaterialManager {
+    nativeMaterial: T;
+    static componentName: string;
+    static defaults: Partial<import("../../interface/utils/Defaults").default<IBasicMaterialManager>>;
+    static schema: Required<import("../../interface/utils/extractProps").ExtractProps<IBasicMaterialManager>>;
+    constructor(nativeMaterial: T);
+    dispose(): this;
+    get color(): string;
+    set color(val: string);
+    get opacity(): number;
+    set opacity(val: number);
+    protected applyTexture(mapNames: Array<string>): void;
+    private videoTextureState?;
+    private textureState?;
+    private initTexture;
+    get videoTexture(): string | HTMLVideoElement | undefined;
+    set videoTexture(url: string | HTMLVideoElement | undefined);
+    get texture(): string | undefined;
+    set texture(url: string | undefined);
+    private _alphaMap?;
+    get alphaMap(): string | undefined;
+    set alphaMap(val: string | undefined);
+    protected _textureRepeat?: Vector2;
+    get textureRepeat(): Vector2 | number | undefined;
+    set textureRepeat(val: Vector2 | number | undefined);
+    protected _textureFlipY?: boolean;
+    get textureFlipY(): boolean | undefined;
+    set textureFlipY(val: boolean | undefined);
+    protected _textureRotation?: number;
+    get textureRotation(): number | undefined;
+    set textureRotation(val: number | undefined);
+}

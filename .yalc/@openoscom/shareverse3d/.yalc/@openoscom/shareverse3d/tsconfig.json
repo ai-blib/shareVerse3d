@@ -1,0 +1,32 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "noImplicitAny": false,
+    "checkJs": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": false,
+    "jsx": "react-jsx",
+    "lib": ["ES2019", "DOM", "esnext"],
+    "module": "ESNext",
+    "types": ["vite/client"],
+    "strict": true,
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["./*"],
+      "@Basic/*": ["src/components/Basic/*"],
+      "@components/*": ["src/components/*"]
+    },
+
+    "target": "es2018",
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "noFallthroughCasesInSwitch": false,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "preserveSymlinks": true,
+    "strictPropertyInitialization": false
+  },
+  "exclude": ["src/**/*.test.ts", "src/**/*.test.tsx","src/utils/","src/components/Engine/package/index.ts"]
+}

@@ -1,0 +1,54 @@
+{
+    "name": "3d",
+    "version": "0.0.1",
+    "description": "Lingo3D is a React/Vue 3d game development framework that ships with a complete visual editor",
+    "repository": "https://github.com/lingo3d/lingo3d",
+    "homepage": "https://lingo3d.com",
+    "author": "Lingo3D",
+    "license": "MIT",
+    "keywords": [
+        "lingo3d",
+        "3d",
+        "game",
+        "react",
+        "vue"
+    ],
+    "scripts": {
+        "dev": "vite",
+        "build": "npm run clean && tsc --noEmit false --declaration --outDir lib",
+        "preview": "vite preview",
+        "clean": "node node_modules/rimraf/bin lib"
+    },
+    "dependencies": {
+        "@lincode/events": "*",
+        "@lincode/filetypes": "*",
+        "@lincode/math": "*",
+        "@lincode/promiselikes": "*",
+        "@lincode/reactivity": "*",
+        "@lincode/utils": "*",
+        "@types/three": "0.144.0",
+        "browser-fs-access": "0.31.1",
+        "cannon-es": "0.20.0",
+        "jszip": "3.9.1",
+        "nipplejs": "0.10.0",
+        "postprocessing": "6.28.7",
+        "preact": "*",
+        "preact-compat": "*",
+        "preact-custom-element": "*",
+        "prettier": "2.7.1",
+        "three": "0.144.0",
+        "three-mesh-bvh": "0.5.16",
+        "xstate": "*"
+    },
+    "private": false,
+    "module": "lib/index.js",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "prettier": {
+        "trailingComma": "none",
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": false
+    },
+    "yalcSig": "f57061cee17a54ab3949e7bedd10bb21"
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"ISky.js","sourceRoot":"","sources":["../../src/interface/ISky.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,cAAc,EAAE,MAAM,kBAAkB,CAAA;AACjD,OAAoB,EAChB,kBAAkB,EAClB,gBAAgB,EACnB,MAAM,eAAe,CAAA;AAItB,MAAM,CAAC,MAAM,SAAS,GAAiC;IACnD,GAAG,gBAAgB;CACtB,CAAA;AAED,MAAM,CAAC,MAAM,WAAW,GAAG,cAAc,CAAO,CAAC,kBAAkB,CAAC,EAAE,EAAE,CAAC,CAAA"}

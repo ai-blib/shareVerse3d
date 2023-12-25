@@ -1,0 +1,8 @@
+{
+  "version": "v1",
+  "packages": {
+    "@openoscom/shareverse3d": {
+      "signature": "645c9f770d894a276b2009b23d21e163"
+    }
+  }
+}

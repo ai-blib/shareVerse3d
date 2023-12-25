@@ -1,0 +1,1 @@
+{"version":3,"file":"useSkyShaderOptions.js","sourceRoot":"","sources":["../../src/states/useSkyShaderOptions.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,MAAM,qBAAqB,CAAA;AAEvC,MAAM,CAAC,MAAM,CAAC,mBAAmB,EAAE,mBAAmB,CAAC,GAAG,KAAK,CAAC;IAC5D,SAAS,EAAE,EAAE;IACb,QAAQ,EAAE,CAAC;IACX,cAAc,EAAE,KAAK;IACrB,eAAe,EAAE,GAAG;IACpB,WAAW,EAAE,IAAI;IACjB,OAAO,EAAE,IAAI;CAChB,CAAC,CAAA"}

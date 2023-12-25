@@ -1,0 +1,30 @@
+import StaticObjectManager from "../display/core/StaticObjectManager";
+import IAnimatedObjectManager from "./IAnimatedObjectManager";
+import IPositioned from "./IPositioned";
+import { ExtractProps } from "./utils/extractProps";
+import Nullable from "./utils/Nullable";
+export type OnIntersectValue = (target: StaticObjectManager) => void;
+export default interface ISimpleObjectManager extends IAnimatedObjectManager, IPositioned {
+    onIntersect: Nullable<OnIntersectValue>;
+    onIntersectOut: Nullable<OnIntersectValue>;
+    onMoveToEnd: Nullable<() => void>;
+    stopKeyboardMove: Function;
+    stopMove: Function;
+    moveTo: Function | Array<any>;
+    lerpTo: Function | Array<any>;
+    placeAt: Function | Array<any> | any;
+    translateX: Function | Array<any>;
+    translateY: Function | Array<any>;
+    translateZ: Function | Array<any>;
+    intersectIds: Nullable<Array<string>>;
+    scaleX: number;
+    scaleY: number;
+    scaleZ: number;
+    scale: number;
+    rotationX: number;
+    rotationY: number;
+    rotationZ: number;
+    rotation: number;
+}
+export declare const simpleObjectManagerSchema: Required<ExtractProps<ISimpleObjectManager>>;
+export declare const simpleObjectManagerDefaults: Partial<import("./utils/Defaults").default<ISimpleObjectManager>>;

@@ -1,0 +1,31 @@
+import { Object3D } from 'three';
+import Appendable from '../../../api/core/Appendable';
+import IVisible from '../../../interface/IVisible';
+export default abstract class VisibleMixin<T extends Object3D = Object3D> extends Appendable<T> implements IVisible {
+    protected _bloom?: boolean;
+    get bloom(): boolean;
+    set bloom(val: boolean);
+    protected _outline?: boolean;
+    get outline(): boolean;
+    set outline(val: boolean);
+    private _visible?;
+    get visible(): boolean;
+    set visible(val: boolean);
+    get frustumCulled(): boolean;
+    set frustumCulled(val: boolean);
+    protected _castShadow?: boolean;
+    get castShadow(): boolean;
+    protected _firstInnerY?: number;
+    get firstInnerY(): number | undefined;
+    set firstInnerY(val: number | undefined);
+    protected _firstInnerZ?: number;
+    get firstInnerZ(): number | undefined;
+    set firstInnerZ(val: number | undefined);
+    protected _firstInnerX?: number;
+    get firstInnerX(): number | undefined;
+    set firstInnerX(val: number | undefined);
+    set castShadow(val: boolean);
+    protected _receiveShadow?: boolean;
+    get receiveShadow(): boolean;
+    set receiveShadow(val: boolean);
+}

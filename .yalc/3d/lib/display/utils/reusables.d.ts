@@ -1,0 +1,18 @@
+import { Box3, MeshBasicMaterial, Quaternion, Vector3, Ray, Euler, Line3, Frustum, Matrix4, MeshStandardMaterial } from "three";
+export declare const vector3: Vector3;
+export declare const vector3_: Vector3;
+export declare const vector3__: Vector3;
+export declare const quaternion: Quaternion;
+export declare const quaternion_: Quaternion;
+export declare const vector3_0: Vector3;
+export declare const vector3_1: Vector3;
+export declare const vector3_half: Vector3;
+export declare const box3: Box3;
+export declare const ray: Ray;
+export declare const euler: Euler;
+export declare const line3: Line3;
+export declare const frustum: Frustum;
+export declare const matrix4: Matrix4;
+export declare const halfPi: number;
+export declare const wireframeMaterial: MeshBasicMaterial;
+export declare const standardMaterial: MeshStandardMaterial;

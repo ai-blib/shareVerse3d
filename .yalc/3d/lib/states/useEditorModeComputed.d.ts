@@ -1,0 +1,1 @@
+export declare const setEditorModeComputed: import("@lincode/reactivity").SetGlobalState<"play" | "select" | "scale" | "mesh" | "translate" | "rotate" | "curve">, getEditorModeComputed: import("@lincode/reactivity").GetGlobalState<"play" | "select" | "scale" | "mesh" | "translate" | "rotate" | "curve">;

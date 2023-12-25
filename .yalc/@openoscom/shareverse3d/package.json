@@ -1,0 +1,63 @@
+{
+    "name": "@openoscom/shareverse3d",
+    "version": "0.0.2",
+    "description": "3d",
+    "repository": "https://github.com/openos-labs/imart-toolkit.git",
+    "homepage": "https://github.com/openos-labs/imart-toolkit.git",
+    "author": "shareverse3d",
+    "license": "MIT",
+    "keywords": [
+        "3d",
+        "game",
+        "react"
+    ],
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build --config vite.config.production.ts  && tsc --declaration --noEmit false --emitDeclarationOnly --outDir dist",
+        "preview": "vite preview",
+        "bundle": "esbuild --bundle src/index.ts --outfile=dist/index.js"
+    },
+    "dependencies": {
+        "@lincode/events": "1.0.27",
+        "@lincode/filetypes": "1.0.1",
+        "@lincode/hooks": "1.0.40",
+        "@lincode/math": "1.0.8",
+        "@lincode/promiselikes": "1.0.23",
+        "@lincode/react-anim-text": "1.0.2",
+        "@lincode/reactivity": "1.0.68",
+        "@openoscom/network": "1.1.2",
+        "@preact/signals": "1.1.2",
+        "@rollup/plugin-alias": "^4.0.3",
+        "@types/three": "0.144.0",
+        "@ungap/structured-clone": "^1.0.1",
+        "browser-fs-access": "0.31.1",
+        "cannon-es": "0.20.0",
+        "esbuild": "^0.15.16",
+        "events": "^3.3.0",
+        "jszip": "3.9.1",
+        "nipplejs": "0.10.0",
+        "postprocessing": "6.28.7",
+        "preact": "10.11.3",
+        "preact-compat": "1.11.1",
+        "preact-custom-element": "1.0.0",
+        "prettier": "2.7.1",
+        "rollup-plugin-node-resolve": "^5.2.0",
+        "stats.js": "0.17.0",
+        "three": "0.144.0",
+        "three-mesh-bvh": "0.5.16",
+        "uuid": "8.3.2",
+        "wavesurfer.js": "6.4.0",
+        "xstate": "4.34.0"
+    },
+    "private": false,
+    "main": "./dist/shareverse3d.mjs",
+    "module": "./dist/shareverse3d.mjs",
+    "types": "./dist/index.d.ts",
+    "prettier": {
+        "trailingComma": "none",
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": false
+    },
+    "yalcSig": "644ca151b9a27f9a5b4c86381d88e0c5"
+}

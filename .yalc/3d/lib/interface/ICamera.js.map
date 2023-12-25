@@ -1,0 +1,1 @@
+{"version":3,"file":"ICamera.js","sourceRoot":"","sources":["../../src/interface/ICamera.ts"],"names":[],"mappings":"AAAA,OAAoB,EAChB,kBAAkB,EAClB,gBAAgB,EACnB,MAAM,eAAe,CAAA;AACtB,OAAO,EAAE,cAAc,EAAE,MAAM,kBAAkB,CAAA;AAKjD,MAAM,CAAC,MAAM,YAAY,GAAoC;IACzD,GAAG,gBAAgB;CACtB,CAAA;AAED,MAAM,CAAC,MAAM,cAAc,GAAG,cAAc,CAAU,CAAC,kBAAkB,CAAC,EAAE,EAAE,CAAC,CAAA"}

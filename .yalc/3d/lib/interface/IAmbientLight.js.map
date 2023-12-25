@@ -1,0 +1,1 @@
+{"version":3,"file":"IAmbientLight.js","sourceRoot":"","sources":["../../src/interface/IAmbientLight.ts"],"names":[],"mappings":"AAAA,OAAmB,EAAE,iBAAiB,EAAE,eAAe,EAAE,MAAM,cAAc,CAAA;AAC7E,OAAO,EAAE,cAAc,EAAE,MAAM,kBAAkB,CAAA;AAKjD,MAAM,CAAC,MAAM,kBAAkB,GAA0C;IACrE,GAAG,eAAe;CACrB,CAAA;AAED,MAAM,CAAC,MAAM,oBAAoB,GAAG,cAAc,CAC9C,CAAC,iBAAiB,CAAC,EACnB,EAAE,CACL,CAAA"}

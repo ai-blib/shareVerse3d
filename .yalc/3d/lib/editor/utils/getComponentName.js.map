@@ -1,0 +1,1 @@
+{"version":3,"file":"getComponentName.js","sourceRoot":"","sources":["../../../src/editor/utils/getComponentName.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,UAAU,EAAE,MAAM,gBAAgB,CAAA;AAE3C,OAAO,cAAc,MAAM,4BAA4B,CAAA;AAEvD,eAAe,CAAC,UAAsB,EAAE,EAAE,CACtC,cAAc,CAAC,UAAU,EAAE,MAAM,CAAC;IAClC,UAAU,CAAC,cAAc,CAAC,UAAU,CAAC,WAAW,EAAE,eAAe,CAAC,CAAC,CAAA"}

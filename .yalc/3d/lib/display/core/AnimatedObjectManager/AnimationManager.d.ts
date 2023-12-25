@@ -1,0 +1,34 @@
+import { AnimationMixer, AnimationClip } from 'three';
+import { Reactive } from '@lincode/reactivity';
+import { EventFunctions } from '@lincode/events';
+import IAnimationManager, { AnimationData } from '../../../interface/IAnimationManager';
+import Appendable from '../../../api/core/Appendable';
+import FoundManager from '../FoundManager';
+export default class AnimationManager extends Appendable implements IAnimationManager {
+    name: string;
+    static componentName: string;
+    static defaults: Partial<import("../../../interface/utils/Defaults").default<IAnimationManager>>;
+    static schema: Required<import("../../../interface/utils/extractProps").ExtractProps<IAnimationManager>>;
+    private actionState;
+    private clipState;
+    dataState: Reactive<[AnimationData | undefined]>;
+    private gotoFrameState;
+    private awaitState;
+    get await(): number;
+    set await(val: number);
+    pausedState: Reactive<boolean>;
+    get paused(): boolean;
+    set paused(val: boolean);
+    mixer: AnimationMixer;
+    private clip;
+    clipTotalFrames: number;
+    audioTotalFrames: number;
+    get totalFrames(): number;
+    constructor(name: string, clip: AnimationClip | undefined, target: object | undefined, repeatState: Reactive<number>, onFinishState: Reactive<(() => void) | undefined>, finishEventState?: Reactive<EventFunctions | undefined>, serialized?: boolean);
+    retarget(target: FoundManager, repeatState: Reactive<number>, onFinishState: Reactive<(() => void) | undefined>, finishEventState: Reactive<EventFunctions | undefined>): AnimationManager;
+    get data(): AnimationData | undefined;
+    set data(val: AnimationData | undefined);
+    mergeData(data: AnimationData): void;
+    get frame(): number;
+    set frame(val: number);
+}

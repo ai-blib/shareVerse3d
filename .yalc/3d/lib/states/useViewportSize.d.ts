@@ -1,0 +1,1 @@
+export declare const setViewportSize: import("@lincode/reactivity").SetGlobalState<[number, number] | undefined>, getViewportSize: import("@lincode/reactivity").GetGlobalState<[number, number] | undefined>;

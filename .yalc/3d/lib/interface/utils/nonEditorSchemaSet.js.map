@@ -1,0 +1,1 @@
+{"version":3,"file":"nonEditorSchemaSet.js","sourceRoot":"","sources":["../../../src/interface/utils/nonEditorSchemaSet.ts"],"names":[],"mappings":"AAAA,MAAM,kBAAkB,GAAG,IAAI,GAAG,EAAU,CAAA;AAC5C,eAAe,kBAAkB,CAAA;AAEjC,MAAM,CAAC,MAAM,UAAU,GAAG,CAAC,KAAoB,EAAE,EAAE;IAC/C,KAAK,MAAM,IAAI,IAAI,KAAK;QAAE,kBAAkB,CAAC,GAAG,CAAC,IAAI,CAAC,CAAA;AAC1D,CAAC,CAAA"}

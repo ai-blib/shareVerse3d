@@ -1,0 +1,32 @@
+import { Cancellable, Disposable } from "@lincode/promiselikes";
+import { GetGlobalState } from "@lincode/reactivity";
+import { Object3D } from "three";
+export default class Appendable<T extends Object3D = Object3D> extends Disposable {
+    outerObject3d: T;
+    nativeObject3d: Object3D;
+    constructor(outerObject3d?: T);
+    parent?: Appendable;
+    children?: Set<Appendable>;
+    protected _append(child: Appendable): void;
+    append(child: Appendable): void;
+    attach(child: Appendable): void;
+    dispose(): this;
+    traverse(cb: (appendable: Appendable) => void): void;
+    traverseSome(cb: (appendable: Appendable) => unknown): boolean;
+    private _uuid?;
+    get uuid(): string;
+    set uuid(val: string);
+    private _proxy?;
+    get proxy(): Appendable<Object3D<import("three").Event>> | undefined;
+    set proxy(val: Appendable<Object3D<import("three").Event>> | undefined);
+    timer(time: number, repeat: number, cb: () => void): Cancellable;
+    beforeRender(cb: () => void): any;
+    queueMicrotask(cb: () => void): void;
+    protected cancellable(cb?: () => void): Cancellable;
+    protected createEffect(cb: () => (() => void) | void, getStates: Array<GetGlobalState<any> | any>): Cancellable;
+    private handles?;
+    protected cancelHandle(name: string, lazyHandle: undefined | false | "" | (() => Cancellable) | any): any;
+    private _onLoop?;
+    get onLoop(): (() => void) | undefined;
+    set onLoop(cb: (() => void) | undefined);
+}

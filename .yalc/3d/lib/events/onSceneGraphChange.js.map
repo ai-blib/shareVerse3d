@@ -1,0 +1,1 @@
+{"version":3,"file":"onSceneGraphChange.js","sourceRoot":"","sources":["../../src/events/onSceneGraphChange.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,EAAE,MAAM,iBAAiB,CAAC;AACxC,OAAO,EAAE,gBAAgB,EAAE,MAAM,gBAAgB,CAAC;AAElD,MAAM,CAAC,qBAAqB,EAAE,kBAAkB,CAAC,GAAG,KAAK,EAAS,CAAC;AACnE,OAAO,EAAE,kBAAkB,EAAE,CAAC;AAE9B,MAAM,CAAC,MAAM,oBAAoB,GAAG,gBAAgB,CAAC,qBAAqB,CAAC,CAAC"}

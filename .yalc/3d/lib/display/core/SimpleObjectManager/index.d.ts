@@ -1,0 +1,57 @@
+import { Point3d } from "@lincode/math";
+import { Object3D } from "three";
+import ISimpleObjectManager, { OnIntersectValue } from "../../../interface/ISimpleObjectManager";
+import PositionedItem from "../../../api/core/PositionedItem";
+import StaticObjectManager from "../StaticObjectManager";
+import MeshItem from "../MeshItem";
+import AnimatedObjectManager from "../AnimatedObjectManager";
+import Nullable from "../../../interface/utils/Nullable";
+import SpawnPoint from "../../SpawnPoint";
+import * as THREE from "three";
+declare class SimpleObjectManager<T extends Object3D = Object3D> extends AnimatedObjectManager<T> implements ISimpleObjectManager {
+    getRayIntersectionsAt(id: string, maxDistance?: number): [StaticObjectManager<Object3D<THREE.Event>>, Point3d][];
+    getRayIntersections(id: string, maxDistance?: number): StaticObjectManager<Object3D<THREE.Event>>[];
+    listenToRayIntersection(id: string, cb: (target: StaticObjectManager, pt: Point3d) => void, maxDistance?: number): any;
+    getIntersections(id: string): Set<StaticObjectManager<Object3D<THREE.Event>>>;
+    listenToIntersection(id: string, cb?: OnIntersectValue, cbOut?: OnIntersectValue): any;
+    private onIntersectState?;
+    private onIntersectOutState?;
+    private intersectIdsState?;
+    private initIntersect;
+    get onIntersect(): OnIntersectValue | undefined;
+    set onIntersect(val: OnIntersectValue | undefined);
+    get onIntersectOut(): OnIntersectValue | undefined;
+    set onIntersectOut(val: OnIntersectValue | undefined);
+    get intersectIds(): string[] | undefined;
+    set intersectIds(val: string[] | undefined);
+    get scaleX(): number;
+    set scaleX(val: number);
+    get scaleY(): number;
+    set scaleY(val: number);
+    get scaleZ(): number;
+    set scaleZ(val: number);
+    get scale(): number;
+    set scale(val: number);
+    get rotationX(): number;
+    set rotationX(val: number);
+    get rotationY(): number;
+    set rotationY(val: number);
+    get rotationZ(): number;
+    set rotationZ(val: number);
+    get rotation(): number;
+    set rotation(val: number);
+    translateX(val: number): void;
+    translateY(val: number): void;
+    translateZ(val: number): void;
+    placeAt(object: MeshItem | Point3d | SpawnPoint | string): void;
+    moveForward(distance: number): void;
+    stopKeyboardMove(): void;
+    moveRight(distance: number): void;
+    onMoveToEnd: Nullable<() => void>;
+    lerpTo(x: number, y: number, z: number, alpha: number, onFrame?: () => void): void;
+    stopMove(): void;
+    moveTo(x: number, y: number | undefined, z: number, speed: number, onFrame?: (y?: number) => void): void;
+}
+interface SimpleObjectManager<T extends Object3D = Object3D> extends AnimatedObjectManager<T>, PositionedItem<T> {
+}
+export default SimpleObjectManager;

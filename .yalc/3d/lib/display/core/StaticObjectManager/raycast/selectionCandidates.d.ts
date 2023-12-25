@@ -1,0 +1,12 @@
+import { Cancellable } from "@lincode/promiselikes";
+import { Object3D } from "three";
+import StaticObjectManager from "..";
+import Appendable from "../../../../api/core/Appendable";
+import VisibleObjectManager from "../../VisibleObjectManager";
+declare const selectionCandidates: Set<Object3D<import("three").Event>>;
+export default selectionCandidates;
+export declare const unselectableSet: WeakSet<StaticObjectManager<Object3D<import("three").Event>>>;
+export declare const additionalSelectionCandidates: Set<Object3D<import("three").Event>>;
+export declare const overrideSelectionCandidates: Set<Object3D<import("three").Event>>;
+export declare const addSelectionHelper: (helper: VisibleObjectManager, manager: Appendable) => Cancellable;
+export declare const getSelectionCandidates: (targets?: Set<Appendable<Object3D<import("three").Event>>> | Appendable<Object3D<import("three").Event>>[] | undefined) => void;
